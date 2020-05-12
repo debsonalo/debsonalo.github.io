@@ -1,0 +1,138 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    padding: 10px;
+    margin: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.calc-body{
+    margin: 0px;
+    padding: 0px;
+    width: 350px;
+    height:640px;
+    max-height: 100%;
+    width: 400px;
+    max-width: 100%;
+    background-color: #ececec;
+    color: #000000;
+    border-radius: 10px;
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+}
+
+.screen {
+    color: black;
+    font-size: 30px;
+    font-family: "Courier New", Courier, monospace;
+    text-align: right;
+    padding: 25px 20px 75px 5px;
+}
+
+.calc-button-row {
+    display: flex;
+    align-content: stretch;
+    justify-content: space-between;
+    margin-bottom: 2px;
+
+}
+
+.calc-button {
+    background-color: #ffffff;
+    border:1px solid #ececec;
+    color: black;
+    height: 100px;
+    flex-basis: 24.6%;
+    border: none;
+    border-radius: 0;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.calc-button-rows {
+    display: grid;
+    padding:0px;
+    grid-template-columns:1fr 1fr 1fr 1fr;
+	  grid-template-rows: 0.5fr 1fr;
+	  grid-gap:2px;
+	  grid-template-areas: 
+	  "one two three equals"
+	  "doublezero doublezero zero equals";
+}
+
+.clear, .divide, .times, .delete, .plus, .minus {
+    color: rgba(7, 143, 255, 0.856);
+}
+
+.one{
+    grid-area:one;
+}
+
+.two{
+    grid-area:two;
+}
+.three{
+    grid-area:three;
+}
+
+.doublezero{
+    grid-area:doublezero;
+}
+
+.zero{
+    grid-area:zero;
+}
+.point{
+    grid-area:point;
+}
+
+.equals{
+    grid-area:equals;
+}
+.calc-buttons{
+background-color: #ffffff;
+color: black;
+height: 100px;
+border: none;
+border-radius: 0;
+font-size: 20px;
+cursor: pointer;
+}
+
+.calc-button:hover {
+    background-color: #ebebeb;
+}
+.calc-button:active {
+    background-color: #bbbcbe;
+}
+
+.calc-buttons:hover {
+    background-color: #ebebeb;
+}
+.calc-buttons:active {
+    background-color: #bbbcbe;
+}
+
+.equals {
+    
+    text-align: center;
+    padding: 100px 10px;
+    margin:0;
+    vertical-align: top;
+    cursor: pointer;
+    color: #FFF;
+    background-color: #1bdd4c;
+    transition: all .2s ease-in-out;
+  }
+
+  .equals:active{
+      background-color:#1b5f2c ;
+  }
+
+  .equals:hover{
+      background-color: #48be65;
+  }
